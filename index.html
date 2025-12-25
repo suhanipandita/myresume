@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,22 +26,23 @@
         }
 
         .header {
-            background: linear-gradient(135deg, #2563eb, #1d4ed8);
-            color: white;
+            background: linear-gradient(135deg, #f3ede4, #f3ede4);
+            color: #841b20;
             padding: 60px 0;
             text-align: center;
+            border: 5px thin #5d1418;
             border-radius: 15px;
             margin-bottom: 30px;
             box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
         }
 
         .profile-img {
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
-            border: 5px solid white;
+            border: 5px thin rgb(0, 0, 0);
             margin-bottom: 20px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
         }
 
         .header h1 {
@@ -66,7 +68,7 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            color: white;
+            color: #841b20;
             text-decoration: none;
             transition: transform 0.3s ease;
         }
@@ -82,7 +84,8 @@
         }
 
         .sidebar {
-            background: white;
+            background: #841b20;
+            color: #f3ede4;
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -92,7 +95,7 @@
         }
 
         .content {
-            background: white;
+            background: #f3ede4;
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -103,11 +106,11 @@
         }
 
         .section h2 {
-            color: #2563eb;
+            color: #841b20;
             font-size: 1.8rem;
             margin-bottom: 20px;
             padding-bottom: 10px;
-            border-bottom: 3px solid #e5e7eb;
+            border-bottom: 3px solid #841b20;
             position: relative;
         }
 
@@ -118,11 +121,33 @@
             left: 0;
             width: 60px;
             height: 3px;
-            background: #2563eb;
+            background: #841b20;
             border-radius: 2px;
         }
 
-        .experience-item, .education-item, .project-item {
+        .sidebar .section h2 {
+            color: #f3ede4;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #e5e7eb;
+            position: relative;
+        }
+
+        .sidebar .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #efebe4;
+            border-radius: 2px;
+        }
+
+        .experience-item,
+        .education-item,
+        .project-item {
             margin-bottom: 25px;
             padding: 20px;
             border-radius: 10px;
@@ -130,7 +155,9 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .experience-item:hover, .education-item:hover, .project-item:hover {
+        .experience-item:hover,
+        .education-item:hover,
+        .project-item:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
@@ -138,24 +165,24 @@
         .job-title {
             font-size: 1.3rem;
             font-weight: 600;
-            color: #1f2937;
+            color: #841b20;
             margin-bottom: 5px;
         }
 
         .company {
-            color: #2563eb;
+            color: #6b4f3f;
             font-weight: 600;
             margin-bottom: 5px;
         }
 
         .place {
-            color: #2563eb;
+            color: #6b4f3f;
             font-size: 0.95rem;
             margin-bottom: 10px;
         }
 
         .date {
-            color: #6b7280;
+            color: #841b20;
             font-size: 0.9rem;
             margin-bottom: 10px;
         }
@@ -167,7 +194,7 @@
         }
 
         .skill-category h3 {
-            color: #374151;
+            color: #f3ede4;
             margin-bottom: 10px;
             font-size: 1.1rem;
         }
@@ -179,8 +206,8 @@
         }
 
         .skill-tag {
-            background: #e0e7ff;
-            color: #3730a3;
+            background: #f3ede4;
+            color: #6b4f3f;
             padding: 5px 12px;
             border-radius: 20px;
             font-size: 0.85rem;
@@ -244,31 +271,32 @@
             body {
                 background: white;
             }
-            
+
             .header {
                 background: #2563eb !important;
                 -webkit-print-color-adjust: exact;
             }
-            
+
             .container {
                 max-width: 100%;
                 padding: 0;
             }
-            
+
             .main-content {
                 grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header class="header">
-            <img src="https://media.licdn.com/dms/image/v2/D4D03AQEDK-4RpOJQEw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1699308728829?e=1761177600&v=beta&t=zgsV5kIVLMzDmz3Ra_rYmeh-mwBVIjWB1Kckj8CXJ2Q" alt="Suhani Pandita" class="profile-img">
+            <img src="./IMG_8448.png" alt="Suhani Pandita" class="profile-img">
             <h1>Suhani Pandita</h1>
             <p class="subtitle">Software Developer & Technology Enthusiast</p>
             <div class="contact-info">
-                <a href="mailto:suhanipandita3@gmail.com" class="contact-item">
+                <a href="mailto:suhanipandita10@gmail.com" class="contact-item">
                     📧 suhanipandita3@gmail.com
                 </a>
                 <a href="tel:7006494500" class="contact-item">
@@ -297,7 +325,7 @@
                                 <span class="skill-tag">C++</span>
                             </div>
                         </div>
-                        
+
                         <div class="skill-category">
                             <h3>Web Development</h3>
                             <div class="skill-list">
@@ -307,7 +335,7 @@
                                 <span class="skill-tag">MongoDB</span>
                             </div>
                         </div>
-                        
+
                         <div class="skill-category">
                             <h3>Tools & Technologies</h3>
                             <div class="skill-list">
@@ -344,9 +372,11 @@
                 <div class="section">
                     <h2>About Me</h2>
                     <p class="about-text">
-                        Passionate software developer with a strong foundation in computer science and hands-on experience in full-stack development. 
-                        I enjoy creating efficient, scalable solutions and am always eager to learn new technologies and tackle challenging problems. 
-                        My goal is to contribute to innovative projects that make a positive impact.
+                        Engineering student passionate about web development (MERN), UI/UX design, and building
+                        practical, user-
+                        centered applications. Strong problem-solving mindset with experience in full-stack development
+                        and rapid
+                        prototyping.
                     </p>
                 </div>
 
@@ -384,7 +414,8 @@
                         <div class="company">BRACT's Vishwakarma Institute of Information Technology</div>
                         <div class="place">Pune, Maharashtra - 411048</div>
                         <div class="date">2023 - 2027</div>
-                        <p>Relevant Coursework: Data Structures, Algorithms, Software Engineering, Database Management, Web Technologies</p>
+                        <p>Relevant Coursework: Data Structures, Algorithms, Software Engineering, Database Management,
+                            Web Technologies</p>
                     </div>
                     <br>
                     <div class="education-item">
@@ -399,28 +430,54 @@
 
                 <div class="section">
                     <h2>Projects</h2>
-                    <div class="project-item">
-                        <div class="job-title">eHospitex Hospital Management System Website</div>
-                        <div class="date">Team Project</div>
-                        <ul>
-                            <li>User-centered web platform for managing hospital operations.</li>
-                            <li>Designed intuitive UI for booking, patient info, and hospital resource tracking.</li>
-                            <li>Emphasized accessibility and user experience principles.</li>
-                        </ul>
-                    </div>
+                    <a href="https://github.com/suhanipandita/MediCore_.git" target="_blank" class="contact-item">
+                        <div class="project-item">
+                            <div class="job-title">MediCore — Full-Stack Healthcare Portal</div>
+                            <ul>
+                                <li>Built a healthcare portal using React (Vite) with Supabase for authentication and
+                                    patient-data workflows.</li>
+                                <li>Designed responsive UI and optimized real-time appointment and record management.
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
 
-                    <div class="project-item">
-                        <div class="job-title">Al chatbot for government schemes</div>
-                        <div class="date">Team Project</div>
-                        <ul>
-                            <li>A chatbot designed to assist citizens in accessing information about government schemes using natural language processing.</li>
-                            <li>Used React for frontend and Typescript for backend API</li>
-                            <li>Integrated chatbot interface using Botpress</li>
-                        </ul>
-                    </div>
+                    <a href="https://github.com/suhanipandita/Sahayak.git" target="_blank" class="contact-item">
+                        <div class="project-item">
+                            <div class="job-title">Sahayak — Multi-Lingual Voice-Enabled Government Assistant</div>
+                            <ul>
+                                <li>Built a voice-enabled assistant using Botpress, Google APIs, and React + TypeScript
+                                    for scheme guidance.</li>
+                                <li>Implemented eligibility flows and multi-language support via Node.js/Express
+                                    backend.</li>
+                            </ul>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/suhanipandita/MobDeal.git" target="_blank" class="contact-item">
+                        <div class="project-item">
+                            <div class="job-title">MobDeal — Mobile Phone Catalog Web App</div>
+                            <ul>
+                                <li>Created a React + TypeScript + Tailwind catalog with filtering by price, RAM,
+                                    storage, and display.</li>
+                                <li>Added detailed device-spec pages using real-time data from Supabase mobile phones.
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
                 </div>
 
-                <!-- <div class="section achievements">
+                <div class="section">
+                    <h2>Patent</h2>
+                    <div class="project-item">
+                        <div class="job-title">A Real-time SOS alert system designed for individuals in urban and sub-urban areas.</div>
+                        <div class="company">
+                            — Granted (2025/10/29)
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="section achievements">
                     <h2>Achievements</h2>
                     <ul>
                         <li>Dean's List recognition for academic excellence</li>
@@ -433,4 +490,5 @@
         </div>
     </div>
 </body>
+
 </html>
