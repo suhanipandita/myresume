@@ -344,7 +344,7 @@ export default function Home() {
           </div>
           <div className="personal-strip">
             <span>discipline / curiosity / strength</span>
-            <span>gym after work ≠ work after gym</span>
+            <span>💪🏋️‍♀️</span>
           </div>
         </div>
       </section>
@@ -371,13 +371,12 @@ export default function Home() {
 
       <footer className="footer shell">
         <div>
-          <span className="footer-kicker">come say hi</span>
+          <span className="footer-kicker">come say hi </span>
           <a className="footer-mail" href="mailto:suhanipandita10@gmail.com">suhanipandita10@gmail.com <Arrow /></a>
         </div>
         <div className="footer-links">
           <a href="https://github.com/suhanipandita" target="_blank" rel="noreferrer">GitHub ↗</a>
           <a href="https://www.linkedin.com/in/suhanipandita/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-          <a href="https://www.instagram.com/moose_please/" target="_blank" rel="noreferrer">Instagram ↗</a>
         </div>
         <div className="footer-bottom">© {year} Suhani Pandita · built with Next.js + Motion</div>
       </footer>
